@@ -1,0 +1,22 @@
+/*animate before*/
+.task.ng-enter {
+  opacity: 0;
+  transition: 0.5s linear all;
+}
+
+/*animate after*/
+.task.ng-enter-active {
+  opacity: 1;
+}
+
+.highlight {
+  transition: 0.5s linear all;
+}
+
+.highlight.on-add {
+  background: white;
+}
+
+.highlight.on {
+  background: yellow;
+}

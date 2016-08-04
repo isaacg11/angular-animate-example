@@ -1,0 +1,24 @@
+<h1>Home Page</h1>
+
+<form ng-submit="vm.addTask()">
+  <input ng-model="vm.newTask" />
+  <input type="submit" value="Add" />
+</form>
+
+<ul>
+  <li ng-repeat="task in vm.tasks" class="task">
+    {{task.name}}
+  </li>
+</ul>
+
+<div ng-class="{on:onOff}" class="highlight">
+  Hello world!
+</div>
+
+<button ng-click="onOff = !onOff">Toggle</button>
+
+<div ng-hide="onOff" class="task">
+  Hello world!
+</div>
+
+<button ng-click="onOff = !onOff">Toggle</button>
